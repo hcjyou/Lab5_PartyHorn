@@ -6,7 +6,7 @@
 var volume_Image = document.getElementById("volume-image");
 var volume_Text = document.getElementById("volume-number");
 var volume_Slider = document.getElementById("volume-slider");
-var volume_Num_Value;
+var volume_Num_Value = 100;
 
 volume_Text.addEventListener("input", changeVolumeText);
 volume_Slider.addEventListener("input", changeVolumeSlider);
@@ -40,7 +40,7 @@ var sound_Image = document.getElementById("sound-image");
 var air_Horn_Button = document.getElementById("radio-air-horn");
 var car_Horn_Button = document.getElementById("radio-car-horn");
 var party_Horn_Button = document.getElementById("radio-party-horn");
-var sound_Type;
+var sound_Type = "./assets/media/audio/air-horn.mp3";
 
 air_Horn_Button.addEventListener("change",changeSoundA);
 car_Horn_Button.addEventListener("change", changeSoundC);
